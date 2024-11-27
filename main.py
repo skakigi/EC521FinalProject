@@ -84,7 +84,7 @@ else:
     -still unsure if one is better than the other (im pretty sure PyGithub just calls requests)
 """
 
-
+repos = ''
 if PyGithub:
     print("Searching using PyGithub...\n")
     repos = query_PyGithub.query(token, query, sort,order,num_repo)

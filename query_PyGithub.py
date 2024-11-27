@@ -3,6 +3,8 @@
 
     Dependencies: PyGithub (NOT github!!!!)
 
+    Documentation:https://pygithub.readthedocs.io/en/stable/introduction.html
+
     Takes your token, and various search parameters (if empty string is passed, ignores parameter)
 """
 

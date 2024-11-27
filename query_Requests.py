@@ -1,7 +1,12 @@
+"""
+    Request Implementation of Querying API
+
+    Dependencies: Requests library
+
+    Documentation: https://requests.readthedocs.io/en/latest/
+"""
+
 import requests
-
-from github import Github
-
 
 def query(token: str, query: str, sort: str, order: str,num_repo):
     url = 'https://api.github.com/search/repositories'
