@@ -39,4 +39,4 @@ def query(token:str,query:str,sort:str,order:str,num_repo:int):
         print(f"Stars: {repo.stargazers_count}")
         print(f"URL: {repo.url}\n")
 
-    return 0
+    return repos

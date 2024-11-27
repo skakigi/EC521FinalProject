@@ -10,7 +10,7 @@ import query_Requests
 testing = 0
 
 """If using PyGithub Version: set to 1, if using Requests Version: set to 0"""
-PyGithub = 1
+PyGithub = 0
 
 # --------------------------------------- Start of Program --------------------------------------- #
 
@@ -52,6 +52,8 @@ if testing:
 
     order = "desc"
 
+    num_repo=10
+
 # --------------------------------------- End of Test Version --------------------------------------- #
 
 # --------------------------------------- User Input Version --------------------------------------- #
@@ -81,12 +83,15 @@ else:
  Use either query_PyGithub or query_Requests 
     -still unsure if one is better than the other (im pretty sure PyGithub just calls requests)
 """
+
+
 if PyGithub:
     print("Searching using PyGithub...\n")
-    query_PyGithub.query(token, query, sort,order,num_repo)
+    repos = query_PyGithub.query(token, query, sort,order,num_repo)
 else:
     print("Searching using Requests...\n")
-    if query_Requests.query(token, query, sort,order,num_repo):
+    repos = query_Requests.query(token, query, sort,order,num_repo)
+    if repos == 1:
         sys.exit("Failed to retrieve requests")
 
 

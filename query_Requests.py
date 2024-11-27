@@ -51,7 +51,7 @@ def query(token: str, query: str, sort: str, order: str,num_repo):
             print(f"Description: {repo['description']}")
             print(f"Stars: {repo['stargazers_count']}")
             print(f"URL: {repo['html_url']}\n")
+        return repos
     else:
         print(f"Request Failed... Exiting")
         return 1
-    return 0
