@@ -4,6 +4,13 @@ import get_tokens
 import query_PyGithub
 import query_Requests
 
+"""
+    Main execution file for API Scraping Tool
+    
+    Check Parameters section before running
+    
+    If testing is off (user input is on), type in your requested sections into terminal or leave empty if unwanted
+"""
 # --------------------------------------- Parameters --------------------------------------- #
 
 """ If using testing inputs: set to 1, If using User Input: set to 0"""
@@ -27,9 +34,10 @@ else:
 
 # --------------------------------------- Testing Input Version --------------------------------------- #
 
-# Determine Search Parameters DO NOT DELETE VARS JUST SET TO ""
+# Determine Search Parameters
 # Note: you NEED a query
 
+""" !!! DO NOT DELETE VARIABLES JUST SET TO "" !!! """
 if testing:
     """
     query examples: 
