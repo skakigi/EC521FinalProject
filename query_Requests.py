@@ -11,46 +11,61 @@ import requests
 def query(token: str, query: str, sort: str, order: str,num_repo):
     url = 'https://api.github.com/search/repositories'
 
-    params = {}
+    per_page = 50
+    pages = num_repo//per_page + (1 if num_repo%per_page != 0 else 0)
+
+    repos = []
+    total_count = 0
     if sort and order:
-        params['q'] = query
-        params['sort'] = sort
-        params['order'] = order
-        params['per_page'] = num_repo
         print(f"--------------------------------------\nQuery:{query}\nSorting By:{sort}\nOrdering:{order}\n--------------------------------------\n")
-
     elif sort:
-        params['q'] = query
-        params['sort'] = sort
-        params['per_page'] = num_repo
         print(f"--------------------------------------\nQuery:{query}\nSorting By:{sort}\n--------------------------------------\n")
-
     elif order:
-        params['q'] = query
-        params['order'] = order
-        params['per_page'] = num_repo
         print(f"--------------------------------------\nQuery:{query}\nOrdering:{order}\n--------------------------------------\n")
-
     else:
-        params['q'] = query
         print(f"--------------------------------------\nQuery:{query}\n--------------------------------------\n")
 
+    for page in range(1,pages+1):
+        params = {}
+        if sort and order:
+            params['q'] = query
+            params['sort'] = sort
+            params['order'] = order
+            params['per_page'] = per_page
+            params['page'] = page
+        elif sort:
+            params['q'] = query
+            params['sort'] = sort
+            params['per_page'] = per_page
+            params['page'] = page
+        elif order:
+            params['q'] = query
+            params['order'] = order
+            params['per_page'] = per_page
+            params['page'] = page
+        else:
+            params['q'] = query
+            params['per_page'] = per_page
+            params['page'] = page
+        headers = {
+            'Authorization': f'token {token}'
+        }
 
-    headers={
-        'Authorization': f'token {token}'
-    }
+        response = requests.get(url, headers=headers,params=params)
 
-    response = requests.get(url, headers=headers,params=params)
+        if response.status_code == 200:
+            repos.extend(response.json()['items'])
+            if total_count == 0:
+                total_count = response.json()['total_count']
+        else:
+            break
 
-    if response.status_code == 200:
-        repos = response.json()
-
-        total_count = repos['total_count']
+    if repos:
         print(f"Total repos found:{total_count}\n")
 
         print(f"Top {num_repo} Repositories:")
         counter = 0
-        for repo in repos['items']:
+        for repo in repos[:num_repo]:
             counter += 1
             print(f"{counter}) Repository Name: {repo['name']}")
             print(f"Description: {repo['description']}")

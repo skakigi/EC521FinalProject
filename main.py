@@ -1,8 +1,12 @@
 import os
 import sys
+import authcheck_Requests
 import get_tokens
 import query_PyGithub
 import query_Requests
+import CSV
+from tqdm import tqdm
+
 
 """
     Main execution file for API Scraping Tool
@@ -92,15 +96,29 @@ else:
     -still unsure if one is better than the other (im pretty sure PyGithub just calls requests)
 """
 
-repos = ''
+"""Clear all data from csv"""
+CSV.clear_data()
+
+"""Request Data"""
 if PyGithub:
     print("Searching using PyGithub...\n")
     repos = query_PyGithub.query(token, query, sort,order,num_repo)
 else:
     print("Searching using Requests...\n")
     repos = query_Requests.query(token, query, sort,order,num_repo)
+    total_count = len(repos)
     if repos == 1:
         sys.exit("Failed to retrieve requests")
+    else:
+        for repo in tqdm(repos[:total_count],total = total_count, desc="Writing to CSV",unit="repo"):
+            auth_vuln=0
+            #TODO: make the auth_check better
+            if authcheck_Requests.check_auth(repo['html_url']):
+                authVuln=1
+            CSV.write_data(repo,auth_vuln)
+
+    print("All Done!\n\n")
+
 
 
 
