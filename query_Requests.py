@@ -11,6 +11,7 @@ import requests
 def query(token: str, query: str, sort: str, order: str,num_repo):
     url = 'https://api.github.com/search/repositories'
 
+
     per_page = 50
     pages = num_repo//per_page + (1 if num_repo%per_page != 0 else 0)
 
@@ -57,21 +58,22 @@ def query(token: str, query: str, sort: str, order: str,num_repo):
             repos.extend(response.json()['items'])
             if total_count == 0:
                 total_count = response.json()['total_count']
+
         else:
             break
 
     if repos:
         print(f"Total repos found:{total_count}\n")
 
-        print(f"Top {num_repo} Repositories:")
+        print(f"Top {min(num_repo,total_count)} Repositories:")
         counter = 0
-        for repo in repos[:num_repo]:
+        for repo in repos[:min(num_repo,total_count)]:
             counter += 1
             print(f"{counter}) Repository Name: {repo['name']}")
             print(f"Description: {repo['description']}")
             print(f"Stars: {repo['stargazers_count']}")
             print(f"URL: {repo['html_url']}\n")
-        return repos
+        return repos[:num_repo]
     else:
         print(f"Request Failed... Exiting")
         return 1

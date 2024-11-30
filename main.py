@@ -17,11 +17,29 @@ from tqdm import tqdm
 """
 # --------------------------------------- Parameters --------------------------------------- #
 
-""" If using testing inputs: set to 1, If using User Input: set to 0"""
-testing = 0
+""" If default inputs: set to True, If using User Input: set to False"""
+
+in_default = input("Do you want to use default parameters? (y/n): ")
+while in_default != "y" and in_default != "n" and in_default != "Y" and in_default != "N":
+    in_default = input("Error: Enter a Valid Input\nDo you want to use default parameters? (y/n): ")
+if in_default == "y" or in_default == "Y":
+    default = True
+    print("Using default parameters...\n")
+else:
+    default = False
+    print("Using user input parameters...\n")
 
 """If using PyGithub Version: set to 1, if using Requests Version: set to 0"""
-PyGithub = 0
+in_PyGithub = input("Do you want to use PyGithub Version? (y/n): ")
+while in_PyGithub != "y" and in_PyGithub != "n" and in_PyGithub != "y" and in_PyGithub != "N" and in_PyGithub != "Y":
+    in_PyGithub = input("Error: Enter a Valid Input\nDo you want to use PyGithub Version? (y/n): ")
+if in_PyGithub == "y" or in_PyGithub == "Y":
+    PyGithub = True
+    print("Using PyGithub Version...\n")
+else:
+    PyGithub = False
+    print("Using Requests Version...\n")
+
 
 # --------------------------------------- Start of Program --------------------------------------- #
 
@@ -42,7 +60,7 @@ else:
 # Note: you NEED a query
 
 """ !!! DO NOT DELETE VARIABLES JUST SET TO "" !!! """
-if testing:
+if default:
     """
     query examples: 
         topic:public-api  (looks for public api)
@@ -93,7 +111,7 @@ else:
 # --------------------------------------- Query Function Choice --------------------------------------- #
 """
  Use either query_PyGithub or query_Requests 
-    -still unsure if one is better than the other (im pretty sure PyGithub just calls requests)
+    - PyGithub currently runs faster than Requests, unsure if its implementation or the PyGithub library is just better
 """
 
 """Clear all data from csv"""
@@ -103,14 +121,24 @@ CSV.clear_data()
 if PyGithub:
     print("Searching using PyGithub...\n")
     repos = query_PyGithub.query(token, query, sort,order,num_repo)
+    total_count = repos.totalCount
+    if total_count:
+        for repo in tqdm(repos[:min(total_count,num_repo)], total=min(total_count,num_repo), desc="Writing to CSV", unit="repo"):
+            auth_vuln = 0
+            # TODO: make the auth_check better
+            if authcheck_Requests.check_auth(repo.url):
+                authVuln = 1
+            CSV.write_data_PyGithub(repo, auth_vuln)
+    else:
+        sys.exit("No valid repositories found")
 else:
     print("Searching using Requests...\n")
     repos = query_Requests.query(token, query, sort,order,num_repo)
     total_count = len(repos)
-    if repos == 1:
+    if total_count == 0:
         sys.exit("Failed to retrieve requests")
     else:
-        for repo in tqdm(repos[:total_count],total = total_count, desc="Writing to CSV",unit="repo"):
+        for repo in tqdm(repos[:min(num_repo,total_count)],total = min(num_repo,total_count), desc="Writing to CSV",unit="repo"):
             auth_vuln=0
             #TODO: make the auth_check better
             if authcheck_Requests.check_auth(repo['html_url']):
