@@ -10,4 +10,27 @@
         -Plot something?
 
 -------------------------------
-    Currently requires a local access token in .env file
+
+
+## Installations
+
+```
+pip install load_dotenv
+pip install PyGithub
+```
+
+## DotEnv Setup
+
+Create a file `.env` and add the following:
+
+```
+GITHUB_TOKEN=your_personal_access_token_here
+```
+
+## Run Program
+
+Run the program to find APIs and check for any vulnerabilities:
+
+```
+py main.py
+```
