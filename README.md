@@ -15,8 +15,7 @@
 ## Installations
 
 ```
-pip install load_dotenv
-pip install PyGithub
+pip install -r requirements.txt
 ```
 
 ## DotEnv Setup
