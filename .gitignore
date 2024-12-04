@@ -3,3 +3,7 @@ __pycache__
 .idea/
 Repo_Vulnerability.csv
 dist/.env
+dist/
+APIScan.spec
+*.spec
+build/
