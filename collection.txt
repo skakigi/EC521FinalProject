@@ -1,34 +1,40 @@
-https://api.myanimelist.net/v2 Social_Media
-https://collectionapi.metmuseum.org/public/collection/v1 Tools
-https://api.chucknorris.io/jokes/random Fun
-https://dog.ceo/api/breeds/image/random Fun
-https://www.boredapi.com/api/activity Fun
-https://api.adviceslip.com/advice Fun
-https://v2.jokeapi.dev/joke/Programming?type=single Fun
-https://api.kanye.rest/ Fun
-https://the-trivia-api.com/api/questions?limit=1 Fun
-http://numbersapi.com/random/trivia Fun
-https://catfact.ninja/fact Fun
-https://picsum.photos/200 Fun
-https://api.twitter.com/2/tweets?ids=12345 Social
-https://graph.instagram.com/v12.0/me?fields=id,username Social
-https://graph.facebook.com/v12.0/me?fields=id,name Social
-https://www.reddit.com/api/v1/me Social
-https://api.linkedin.com/v2/me Social
-https://api.openweathermap.org/data/2.5/weather?q=London Tools
-https://maps.googleapis.com/maps/api/geocode/json?address=Boston Tools
-https://api.exchangerate-api.com/v4/latest/USD Tools
-https://api.apilayer.com/email_verification/check?email=test@example.com Tools
-https://ipinfo.io/8.8.8.8 Tools
-https://api.themoviedb.org/3/movie/550 Entertainment
-https://api.spotify.com/v1/me/player/currently-playing Entertainment
-https://api.tvmaze.com/shows/1 Entertainment
-https://itunes.apple.com/search?term=jack+johnson Entertainment
-https://trackapi.nutritionix.com/v2/search/instant?query=apple Health
-https://api.fda.gov/drug/label.json Health
-https://data.cdc.gov/resource/hc4f-j6nb.json Health
-https://api.fitbit.com/1/user/-/activities/steps/date/today/1w.json Health
-https://covid19.who.int/WHO-COVID-19-global-table-data.csv Health
-https://openlibrary.org/api/books?bibkeys=ISBN:0451526538 Education
-http://export.arxiv.org/api/query?search_query=all:quantum Education
-https://datausa.io/api/data?drilldowns=Nation&measures=Population Education
+https://amethyste.xyz/generate-image	Art & Design
+https://api.artic.edu/api/v1/artworks	Art & Design
+http://colormind.io/api/get_palette	Art & Design
+https://api.cooperhewitt.org/v1/objects	Art & Design
+https://api.dribbble.com/v1/users	Art & Design
+https://emojihub.dev/api/all	Art & Design
+https://www.harvardartmuseums.org/api/collections	Art & Design
+https://api.iconfinder.com/v4/icons	Art & Design
+https://www.rijksmuseum.nl/en/api/en/collection	Art & Design
+https://www.wordclouds.com/api	Art & Design
+https://auth0.com/oauth/token	Authentication
+https://api.clerk.dev/v1/users	Authentication
+https://microservices.io/users	Authentication
+https://www.getotp.com/otp/send	Authentication
+https://api.kinde.com/v1/login	Authentication
+https://stytch.com/oauth/token	Authentication
+https://www.mojoauth.com/verify	Authentication
+https://api.corbado.com/verify-passkey	Authentication
+https://api.warrant.com/permissions	Authentication
+https://api.clerk.dev/v1/users	Authentication
+https://api.charitynavigator.org/v1/organizations	Business
+https://clearbit.com/v2/companies/logos	Business
+https://www.freelancer.com/api/projects	Business
+https://analytics.googleapis.com/v3/data/ga	Business
+https://api.mailboxvalidator.com/api/v1/validate	Business
+https://api.mailgun.com/v3/domains	Business
+https://api.markerapi.com/search	Business
+https://api.trello.com/1/boards	Business
+https://clearbit.com/v2/companies	Business
+https://gmail.googleapis.com/v1/users/me/messages	Business
+https://www.googleapis.com/books/v1/volumes	Books
+http://libgen.rs/search	Books
+https://openlibrary.org/developers/api/works	Books
+https://api.nytimes.com/svc/books/v3/reviews	Books
+https://www.penguinrandomhouse.com/books	Books
+https://bibleapi.co/v1/verses	Books
+https://bhagavadgita.io/api/v1/verse	Books
+http://www.vedic-society.com/api/vedic	Books
+https://www.thirukkuralapp.com/api/thirukkural	Books
+https://api.crossref.org/works	Books
