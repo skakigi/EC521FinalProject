@@ -72,5 +72,3 @@ with open(output_file, "r") as file:
 if not url_data[0] in curr:
     curr[url_data[0]] = data
     writeData(curr)
-
-

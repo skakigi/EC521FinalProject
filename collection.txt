@@ -1,0 +1,2 @@
+https://api.myanimelist.net/v2 Social_Media
+https://collectionapi.metmuseum.org/public/collection/v1 Tools
