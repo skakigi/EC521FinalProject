@@ -1,1 +1,561 @@
-{}
+{
+    "https://api.myanimelist.net/v2\n": {
+        "Type": "Social_Media\n",
+        "High": [],
+        "Medium": [
+            " CSP frame-ancestors policy is  \n",
+            " CORS Headers are missing       \n",
+            " X-Frame-Options Header is      \n"
+        ],
+        "Low": [],
+        "Info": [
+            " Service Fingerprinting         \n",
+            " Operation May Accepts          \n",
+            " CSP Header is not set          \n",
+            " X-Content-Type-Options Header  \n"
+        ]
+    },
+    "https://collectionapi.metmuseum.org/public/collection/v1\n": {
+        "Type": "Tools\n",
+        "High": [],
+        "Medium": [
+            " CSP frame-ancestors policy is  \n",
+            " X-Frame-Options Header is      \n"
+        ],
+        "Low": [],
+        "Info": [
+            " Cookies not HTTP-Only          \n",
+            " Cookies not Secure             \n",
+            " Cookies SameSite not set       \n",
+            " Cookies not Secure             \n",
+            " Discoverable OpenAPI Path      \n",
+            " Cookies SameSite not set       \n",
+            " Cookies Expires not set        \n",
+            " CSP Header is not set          \n",
+            " Operation May Accepts          \n",
+            " CORS Allow-Origin Header is    \n",
+            " HSTS Header is missing         \n",
+            " X-Content-Type-Options Header  \n",
+            " Service Fingerprinting         \n"
+        ]
+    },
+    "https://api.chucknorris.io/jokes/random\n": {
+        "Type": "Fun\n",
+        "High": [],
+        "Medium": [
+            " CSP frame-ancestors policy is  \n",
+            " CORS Headers are missing       \n",
+            " X-Frame-Options Header is      \n"
+        ],
+        "Low": [],
+        "Info": [
+            " Service Fingerprinting         \n",
+            " Operation May Accepts          \n",
+            " CSP Header is not set          \n",
+            " HSTS Header is missing         \n",
+            " X-Content-Type-Options Header  \n"
+        ]
+    },
+    "https://dog.ceo/api/breeds/image/random\n": {
+        "Type": "Fun\n",
+        "High": [],
+        "Medium": [
+            " CSP frame-ancestors policy is  \n",
+            " X-Frame-Options Header is      \n"
+        ],
+        "Low": [],
+        "Info": [
+            " Discoverable OpenAPI Path      \n",
+            " Service Fingerprinting         \n",
+            " Operation May Accepts          \n",
+            " CSP Header is not set          \n",
+            " CORS Allow-Origin Header is    \n",
+            " HSTS Header is missing         \n",
+            " X-Content-Type-Options Header  \n",
+            " Possible HTTP Method Override  \n"
+        ]
+    },
+    "https://www.boredapi.com/api/activity\n": {
+        "Type": "Fun\n",
+        "High": [],
+        "Medium": [
+            " CSP frame-ancestors policy is  \n",
+            " CORS Headers are missing       \n",
+            " X-Frame-Options Header is      \n"
+        ],
+        "Low": [],
+        "Info": [
+            " Service Fingerprinting         \n",
+            " Operation May Accepts          \n",
+            " CSP Header is not set          \n",
+            " HSTS Header is missing         \n",
+            " X-Content-Type-Options Header  \n"
+        ]
+    },
+    "https://api.adviceslip.com/advice\n": {
+        "Type": "Fun\n",
+        "High": [],
+        "Medium": [
+            " CSP frame-ancestors policy is  \n",
+            " X-Frame-Options Header is      \n"
+        ],
+        "Low": [],
+        "Info": [
+            " Service Fingerprinting         \n",
+            " Operation May Accepts          \n",
+            " CORS Allow-Origin Header is    \n"
+        ]
+    },
+    "https://v2.jokeapi.dev/joke/Programming?type=single\n": {
+        "Type": "Fun\n",
+        "High": [],
+        "Medium": [
+            " CSP frame-ancestors policy is  \n"
+        ],
+        "Low": [],
+        "Info": [
+            " Discoverable OpenAPI Path      \n",
+            " Service Fingerprinting         \n",
+            " Operation May Accepts          \n",
+            " CORS Allow-Origin Header is    \n"
+        ]
+    },
+    "https://api.kanye.rest/\n": {
+        "Type": "Fun\n",
+        "High": [],
+        "Medium": [
+            " CSP frame-ancestors policy is  \n",
+            " X-Frame-Options Header is      \n"
+        ],
+        "Low": [],
+        "Info": [
+            " Service Fingerprinting         \n",
+            " Operation May Accepts          \n",
+            " CSP Header is not set          \n",
+            " CORS Allow-Origin Header is    \n",
+            " HSTS Header is missing         \n",
+            " X-Content-Type-Options Header  \n"
+        ]
+    },
+    "https://the-trivia-api.com/api/questions?limit=1\n": {
+        "Type": "Fun\n",
+        "High": [],
+        "Medium": [
+            " CSP frame-ancestors policy is  \n",
+            " X-Frame-Options Header is      \n"
+        ],
+        "Low": [],
+        "Info": [
+            " Service Fingerprinting         \n",
+            " Operation May Accepts          \n",
+            " CSP Header is not set          \n",
+            " CORS Allow-Origin Header is    \n",
+            " X-Content-Type-Options Header  \n"
+        ]
+    },
+    "http://numbersapi.com/random/trivia\n": {
+        "Type": "Fun\n",
+        "High": [],
+        "Medium": [
+            " CSP frame-ancestors policy is  \n",
+            " X-Frame-Options Header is      \n"
+        ],
+        "Low": [],
+        "Info": [
+            " Service Fingerprinting         \n",
+            " Operation May Accepts          \n",
+            " CSP Header is not set          \n",
+            " CORS Allow-Origin Header is    \n",
+            " HSTS Header is missing         \n",
+            " X-Content-Type-Options Header  \n"
+        ]
+    },
+    "https://catfact.ninja/fact\n": {
+        "Type": "Fun\n",
+        "High": [],
+        "Medium": [
+            " CSP frame-ancestors policy is  \n"
+        ],
+        "Low": [],
+        "Info": [
+            " Service Fingerprinting         \n",
+            " Operation May Accepts          \n",
+            " Cookies not HTTP-Only          \n",
+            " CSP Header is not set          \n",
+            " CORS Allow-Origin Header is    \n",
+            " HSTS Header is missing         \n"
+        ]
+    },
+    "https://picsum.photos/200\n": {
+        "Type": "Fun\n",
+        "High": [],
+        "Medium": [
+            " CSP frame-ancestors policy is  \n",
+            " CORS Headers are missing       \n",
+            " X-Frame-Options Header is      \n"
+        ],
+        "Low": [],
+        "Info": [
+            " Service Fingerprinting         \n",
+            " Operation May Accepts          \n",
+            " CSP Header is not set          \n",
+            " HSTS Header is missing         \n",
+            " X-Content-Type-Options Header  \n"
+        ]
+    },
+    "https://api.twitter.com/2/tweets?ids=12345\n": {
+        "Type": "Social\n",
+        "High": [],
+        "Medium": [
+            " CSP frame-ancestors policy is  \n",
+            " CORS Headers are missing       \n",
+            " X-Frame-Options Header is      \n"
+        ],
+        "Low": [],
+        "Info": [
+            " Operation May Accepts          \n",
+            " CSP Header is not set          \n",
+            " HSTS Header is missing         \n",
+            " X-Content-Type-Options Header  \n"
+        ]
+    },
+    "https://graph.instagram.com/v12.0/me?fields=id,username\n": {
+        "Type": "Social\n",
+        "High": [],
+        "Medium": [
+            " CSP frame-ancestors policy is  \n"
+        ],
+        "Low": [],
+        "Info": [
+            " Service Fingerprinting         \n",
+            " Operation May Accepts          \n",
+            " CORS Allow-Origin Header is    \n"
+        ]
+    },
+    "https://graph.facebook.com/v12.0/me?fields=id,name\n": {
+        "Type": "Social\n",
+        "High": [],
+        "Medium": [
+            " CSP frame-ancestors policy is  \n",
+            " X-Frame-Options Header is      \n"
+        ],
+        "Low": [],
+        "Info": [
+            " Service Fingerprinting         \n",
+            " Operation May Accepts          \n",
+            " CSP Header is not set          \n",
+            " CORS Allow-Origin Header is    \n",
+            " X-Content-Type-Options Header  \n"
+        ]
+    },
+    "https://www.reddit.com/api/v1/me\n": {
+        "Type": "Social\n",
+        "High": [],
+        "Medium": [
+            " CSP frame-ancestors policy is  \n",
+            " CORS Headers are missing       \n"
+        ],
+        "Low": [],
+        "Info": [
+            " Cookies not HTTP-Only          \n",
+            " Cookies SameSite set to None   \n",
+            " Cookies not HTTP-Only          \n",
+            " Cookies SameSite set to None   \n",
+            " Cookies not HTTP-Only          \n",
+            " Cookies SameSite set to None   \n",
+            " Discoverable OpenAPI Path      \n",
+            " Operation May Accepts          \n",
+            " Cookies Expires not set        \n",
+            " Cookies not HTTP-Only          \n",
+            " Cookies SameSite not set       \n",
+            " Cookies Expires not set        \n",
+            " CSP Header is not set          \n",
+            " Service Fingerprinting         \n",
+            " Discoverable GraphQL Endpoint  \n"
+        ]
+    },
+    "https://api.linkedin.com/v2/me\n": {
+        "Type": "Social\n",
+        "High": [],
+        "Medium": [
+            " CSP frame-ancestors policy is  \n",
+            " CORS Headers are missing       \n",
+            " X-Frame-Options Header is      \n"
+        ],
+        "Low": [],
+        "Info": [
+            " Operation May Accepts          \n",
+            " Cookies not HTTP-Only          \n",
+            " Cookies SameSite set to None   \n",
+            " Cookies not HTTP-Only          \n",
+            " Cookies SameSite set to None   \n",
+            " CSP Header is not set          \n",
+            " HSTS Header is missing         \n",
+            " X-Content-Type-Options Header  \n"
+        ]
+    },
+    "https://api.openweathermap.org/data/2.5/weather?q=London\n": {
+        "Type": "Tools\n",
+        "High": [],
+        "Medium": [
+            " CSP frame-ancestors policy is  \n",
+            " X-Frame-Options Header is      \n"
+        ],
+        "Low": [],
+        "Info": [
+            " Service Fingerprinting         \n",
+            " Operation May Accepts          \n",
+            " CSP Header is not set          \n",
+            " CORS Allow-Origin Header is    \n",
+            " HSTS Header is missing         \n",
+            " X-Content-Type-Options Header  \n"
+        ]
+    },
+    "https://maps.googleapis.com/maps/api/geocode/json?address=Boston\n": {
+        "Type": "Tools\n",
+        "High": [],
+        "Medium": [
+            " CSP frame-ancestors policy is  \n"
+        ],
+        "Low": [],
+        "Info": [
+            " Discoverable OpenAPI Path      \n",
+            " Operation May Accepts          \n",
+            " CSP Header is not set          \n",
+            " CORS Allow-Origin Header is    \n",
+            " HSTS Header is missing         \n",
+            " X-Content-Type-Options Header  \n"
+        ]
+    },
+    "https://api.exchangerate-api.com/v4/latest/USD\n": {
+        "Type": "Tools\n",
+        "High": [],
+        "Medium": [
+            " CSP frame-ancestors policy is  \n"
+        ],
+        "Low": [],
+        "Info": [
+            " Service Fingerprinting         \n",
+            " Operation May Accepts          \n",
+            " CSP Header is not set          \n",
+            " CORS Allow-Origin Header is    \n",
+            " HSTS Header is missing         \n"
+        ]
+    },
+    "https://api.apilayer.com/email_verification/check?email=test@example.com\n": {
+        "Type": "Tools\n",
+        "High": [],
+        "Medium": [
+            " CSP frame-ancestors policy is  \n",
+            " X-Frame-Options Header is      \n"
+        ],
+        "Low": [],
+        "Info": [
+            " Service Fingerprinting         \n",
+            " Operation May Accepts          \n",
+            " CSP Header is not set          \n",
+            " CORS Allow-Origin Header is    \n"
+        ]
+    },
+    "https://ipinfo.io/8.8.8.8\n": {
+        "Type": "Tools\n",
+        "High": [],
+        "Medium": [
+            " CSP frame-ancestors policy is  \n"
+        ],
+        "Low": [],
+        "Info": [
+            " Service Fingerprinting         \n",
+            " Operation May Accepts          \n",
+            " CSP Header is not set          \n",
+            " CORS Allow-Origin Header is    \n"
+        ]
+    },
+    "https://api.themoviedb.org/3/movie/550\n": {
+        "Type": "Entertainment\n",
+        "High": [],
+        "Medium": [
+            " CSP frame-ancestors policy is  \n",
+            " CORS Headers are missing       \n",
+            " X-Frame-Options Header is      \n"
+        ],
+        "Low": [],
+        "Info": [
+            " Service Fingerprinting         \n",
+            " Operation May Accepts          \n",
+            " CSP Header is not set          \n",
+            " HSTS Header is missing         \n",
+            " X-Content-Type-Options Header  \n"
+        ]
+    },
+    "https://api.spotify.com/v1/me/player/currently-playing\n": {
+        "Type": "Entertainment\n",
+        "High": [],
+        "Medium": [
+            " CSP frame-ancestors policy is  \n",
+            " X-Frame-Options Header is      \n"
+        ],
+        "Low": [],
+        "Info": [
+            " Service Fingerprinting         \n",
+            " Operation May Accepts          \n",
+            " CSP Header is not set          \n",
+            " CORS Allow-Origin Header is    \n"
+        ]
+    },
+    "https://api.tvmaze.com/shows/1\n": {
+        "Type": "Entertainment\n",
+        "High": [],
+        "Medium": [
+            " CSP frame-ancestors policy is  \n",
+            " X-Frame-Options Header is      \n"
+        ],
+        "Low": [],
+        "Info": [
+            " Service Fingerprinting         \n",
+            " Operation May Accepts          \n",
+            " CSP Header is not set          \n",
+            " CORS Allow-Origin Header is    \n",
+            " HSTS Header is missing         \n",
+            " X-Content-Type-Options Header  \n",
+            " Possible HTTP Method Override  \n",
+            " HTTP TRACK Method enabled      \n"
+        ]
+    },
+    "https://itunes.apple.com/search?term=jack+johnson\n": {
+        "Type": "Entertainment\n",
+        "High": [],
+        "Medium": [],
+        "Low": [],
+        "Info": []
+    },
+    "https://trackapi.nutritionix.com/v2/search/instant?query=apple\n": {
+        "Type": "Health\n",
+        "High": [],
+        "Medium": [
+            " CSP frame-ancestors policy is  \n",
+            " X-Frame-Options Header is      \n"
+        ],
+        "Low": [],
+        "Info": [
+            " Service Fingerprinting         \n",
+            " Operation May Accepts          \n",
+            " CSP Header is not set          \n",
+            " CORS Allow-Origin Header is    \n",
+            " X-Content-Type-Options Header  \n"
+        ]
+    },
+    "https://api.fda.gov/drug/label.json\n": {
+        "Type": "Health\n",
+        "High": [],
+        "Medium": [
+            " CSP frame-ancestors policy is  \n"
+        ],
+        "Low": [],
+        "Info": [
+            " Service Fingerprinting         \n",
+            " Operation May Accepts          \n",
+            " CORS Allow-Origin Header is    \n"
+        ]
+    },
+    "https://data.cdc.gov/resource/hc4f-j6nb.json\n": {
+        "Type": "Health\n",
+        "High": [],
+        "Medium": [
+            " CSP frame-ancestors policy is  \n",
+            " X-Frame-Options Header is      \n"
+        ],
+        "Low": [],
+        "Info": [
+            " Service Fingerprinting         \n",
+            " Operation May Accepts          \n",
+            " CSP Header is not set          \n",
+            " CORS Allow-Origin Header is    \n",
+            " X-Content-Type-Options Header  \n",
+            " HTTP TRACK Method enabled      \n"
+        ]
+    },
+    "https://api.fitbit.com/1/user/-/activities/steps/date/today/1w.json\n": {
+        "Type": "Health\n",
+        "High": [],
+        "Medium": [
+            " CSP frame-ancestors policy is  \n",
+            " CORS Headers are missing       \n"
+        ],
+        "Low": [],
+        "Info": [
+            " Service Fingerprinting         \n",
+            " Operation May Accepts          \n",
+            " CSP Header is not set          \n",
+            " HSTS Header is missing         \n"
+        ]
+    },
+    "https://covid19.who.int/WHO-COVID-19-global-table-data.csv\n": {
+        "Type": "Health\n",
+        "High": [],
+        "Medium": [
+            " CSP frame-ancestors policy is  \n"
+        ],
+        "Low": [],
+        "Info": [
+            " Discoverable OpenAPI Path      \n",
+            " Discoverable GraphQL Endpoint  \n",
+            " Service Fingerprinting         \n",
+            " Operation May Accepts          \n",
+            " Cookies SameSite set to None   \n",
+            " Cookies Expires not set        \n",
+            " CORS Allow-Origin Header is    \n"
+        ]
+    },
+    "https://openlibrary.org/api/books?bibkeys=ISBN:0451526538\n": {
+        "Type": "Education\n",
+        "High": [],
+        "Medium": [
+            " CSP frame-ancestors policy is  \n",
+            " X-Frame-Options Header is      \n"
+        ],
+        "Low": [],
+        "Info": [
+            " Discoverable GraphQL Endpoint  \n",
+            " Service Fingerprinting         \n",
+            " Operation May Accepts          \n",
+            " CSP Header is not set          \n",
+            " CORS Allow-Origin Header is    \n",
+            " HSTS Header is missing         \n",
+            " X-Content-Type-Options Header  \n"
+        ]
+    },
+    "http://export.arxiv.org/api/query?search_query=all:quantum\n": {
+        "Type": "Education\n",
+        "High": [],
+        "Medium": [
+            " CSP frame-ancestors policy is  \n",
+            " X-Frame-Options Header is      \n"
+        ],
+        "Low": [],
+        "Info": [
+            " Service Fingerprinting         \n",
+            " Operation May Accepts          \n",
+            " CSP Header is not set          \n",
+            " CORS Allow-Origin Header is    \n",
+            " HSTS Header is missing         \n",
+            " X-Content-Type-Options Header  \n"
+        ]
+    },
+    "https://datausa.io/api/data?drilldowns=Nation&measures=Population\n": {
+        "Type": "Education\n",
+        "High": [],
+        "Medium": [
+            " CSP frame-ancestors policy is  \n",
+            " CORS Headers are missing       \n"
+        ],
+        "Low": [],
+        "Info": [
+            " Service Fingerprinting         \n",
+            " Operation May Accepts          \n",
+            " CSP Header is not set          \n",
+            " HSTS Header is missing         \n",
+            " X-Content-Type-Options Header  \n"
+        ]
+    }
+}
