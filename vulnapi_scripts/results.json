@@ -1,6 +1,6 @@
 {
     "https://api.myanimelist.net/v2": {
-        "Type": "Social",
+        "Type": "Entertainment",
         "High": [],
         "Medium": [
             " CSP frame-ancestors policy is  ",
@@ -40,7 +40,7 @@
         ]
     },
     "https://api.chucknorris.io/jokes/random": {
-        "Type": "Fun",
+        "Type": "Entertainment",
         "High": [],
         "Medium": [
             " CSP frame-ancestors policy is  ",
@@ -57,7 +57,7 @@
         ]
     },
     "https://dog.ceo/api/breeds/image/random": {
-        "Type": "Fun",
+        "Type": "Entertainment",
         "High": [],
         "Medium": [
             " CSP frame-ancestors policy is  ",
@@ -76,7 +76,7 @@
         ]
     },
     "https://www.boredapi.com/api/activity": {
-        "Type": "Fun",
+        "Type": "Entertainment",
         "High": [],
         "Medium": [
             " CSP frame-ancestors policy is  ",
@@ -93,7 +93,7 @@
         ]
     },
     "https://api.adviceslip.com/advice": {
-        "Type": "Fun",
+        "Type": "Entertainment",
         "High": [],
         "Medium": [
             " CSP frame-ancestors policy is  ",
@@ -107,7 +107,7 @@
         ]
     },
     "https://v2.jokeapi.dev/joke/Programming?type=single": {
-        "Type": "Fun",
+        "Type": "Entertainment",
         "High": [],
         "Medium": [
             " CSP frame-ancestors policy is  "
@@ -121,7 +121,7 @@
         ]
     },
     "https://api.kanye.rest/": {
-        "Type": "Fun",
+        "Type": "Entertainment",
         "High": [],
         "Medium": [
             " CSP frame-ancestors policy is  ",
@@ -138,7 +138,7 @@
         ]
     },
     "https://the-trivia-api.com/api/questions?limit=1": {
-        "Type": "Fun",
+        "Type": "Entertainment",
         "High": [],
         "Medium": [
             " CSP frame-ancestors policy is  ",
@@ -154,7 +154,7 @@
         ]
     },
     "http://numbersapi.com/random/trivia": {
-        "Type": "Fun",
+        "Type": "Entertainment",
         "High": [],
         "Medium": [
             " CSP frame-ancestors policy is  ",
@@ -171,7 +171,7 @@
         ]
     },
     "https://catfact.ninja/fact": {
-        "Type": "Fun",
+        "Type": "Entertainment",
         "High": [],
         "Medium": [
             " CSP frame-ancestors policy is  "
@@ -187,7 +187,7 @@
         ]
     },
     "https://picsum.photos/200": {
-        "Type": "Fun",
+        "Type": "Entertainment",
         "High": [],
         "Medium": [
             " CSP frame-ancestors policy is  ",
@@ -204,7 +204,7 @@
         ]
     },
     "https://api.twitter.com/2/tweets?ids=12345": {
-        "Type": "Social",
+        "Type": "Entertainment",
         "High": [],
         "Medium": [
             " CSP frame-ancestors policy is  ",
@@ -220,7 +220,7 @@
         ]
     },
     "https://graph.instagram.com/v12.0/me?fields=id,username": {
-        "Type": "Social",
+        "Type": "Entertainment",
         "High": [],
         "Medium": [
             " CSP frame-ancestors policy is  "
@@ -233,7 +233,7 @@
         ]
     },
     "https://graph.facebook.com/v12.0/me?fields=id,name": {
-        "Type": "Social",
+        "Type": "Entertainment",
         "High": [],
         "Medium": [
             " CSP frame-ancestors policy is  ",
@@ -249,7 +249,7 @@
         ]
     },
     "https://www.reddit.com/api/v1/me": {
-        "Type": "Social",
+        "Type": "Entertainment",
         "High": [],
         "Medium": [
             " CSP frame-ancestors policy is  ",
@@ -275,7 +275,7 @@
         ]
     },
     "https://api.linkedin.com/v2/me": {
-        "Type": "Social",
+        "Type": "Entertainment",
         "High": [],
         "Medium": [
             " CSP frame-ancestors policy is  ",
@@ -507,7 +507,7 @@
             " CORS Allow-Origin Header is not set"
         ]
     },
-    "https://openlibrary.org/api/books?bibkeys=ISBN:0451526538": {
+    "https://openlibrary.org/api/Education?bibkeys=ISBN:0451526538": {
         "Type": "Education",
         "High": [],
         "Medium": [
@@ -559,14 +559,14 @@
         ]
     },
     "https://amethyste.xyz/generate-image": {
-        "Type": "Art",
+        "Type": "Education",
         "High": [],
         "Medium": [],
         "Low": [],
         "Info": []
     },
-    "https://api.artic.edu/api/v1/artworks": {
-        "Type": "Art",
+    "https://api.Educationic.edu/api/v1/Educationworks": {
+        "Type": "Education",
         "High": [],
         "Medium": [
             " CSP frame-ancestors policy is  ",
@@ -584,7 +584,7 @@
         ]
     },
     "http://colormind.io/api/get_palette": {
-        "Type": "Art",
+        "Type": "Education",
         "High": [],
         "Medium": [
             " CSP frame-ancestors policy is  ",
@@ -603,7 +603,7 @@
         ]
     },
     "https://api.cooperhewitt.org/v1/objects": {
-        "Type": "Art",
+        "Type": "Education",
         "High": [],
         "Medium": [
             " CSP frame-ancestors policy is  ",
@@ -620,21 +620,21 @@
         ]
     },
     "https://api.dribbble.com/v1/users": {
-        "Type": "Art",
+        "Type": "Education",
         "High": [],
         "Medium": [],
         "Low": [],
         "Info": []
     },
     "https://emojihub.dev/api/all": {
-        "Type": "Art",
+        "Type": "Education",
         "High": [],
         "Medium": [],
         "Low": [],
         "Info": []
     },
-    "https://www.harvardartmuseums.org/api/collections": {
-        "Type": "Art",
+    "https://www.harvardEducationmuseums.org/api/collections": {
+        "Type": "Education",
         "High": [],
         "Medium": [
             " CSP frame-ancestors policy is  ",
@@ -652,7 +652,7 @@
         ]
     },
     "https://api.iconfinder.com/v4/icons": {
-        "Type": "Art",
+        "Type": "Education",
         "High": [],
         "Medium": [
             " CSP frame-ancestors policy is  "
@@ -667,7 +667,7 @@
         ]
     },
     "https://www.rijksmuseum.nl/en/api/en/collection": {
-        "Type": "Art",
+        "Type": "Education",
         "High": [],
         "Medium": [
             " CSP frame-ancestors policy is  ",
@@ -685,7 +685,7 @@
         ]
     },
     "https://www.wordclouds.com/api": {
-        "Type": "Art",
+        "Type": "Education",
         "High": [],
         "Medium": [
             " CSP frame-ancestors policy is  ",
@@ -702,7 +702,7 @@
         ]
     },
     "https://auth0.com/oauth/token": {
-        "Type": "Authentication",
+        "Type": "Tools",
         "High": [],
         "Medium": [
             " CSP frame-ancestors policy is  ",
@@ -717,7 +717,7 @@
         ]
     },
     "https://api.clerk.dev/v1/users": {
-        "Type": "Authentication",
+        "Type": "Tools",
         "High": [],
         "Medium": [
             " CSP frame-ancestors policy is  ",
@@ -734,7 +734,7 @@
         ]
     },
     "https://microservices.io/users": {
-        "Type": "Authentication",
+        "Type": "Tools",
         "High": [],
         "Medium": [
             " CSP frame-ancestors policy is  ",
@@ -750,7 +750,7 @@
         ]
     },
     "https://www.getotp.com/otp/send": {
-        "Type": "Authentication",
+        "Type": "Tools",
         "High": [],
         "Medium": [
             " CSP frame-ancestors policy is  ",
@@ -768,7 +768,7 @@
         ]
     },
     "https://api.kinde.com/v1/login": {
-        "Type": "Authentication",
+        "Type": "Tools",
         "High": [],
         "Medium": [
             " CSP frame-ancestors policy is  ",
@@ -782,7 +782,7 @@
         ]
     },
     "https://stytch.com/oauth/token": {
-        "Type": "Authentication",
+        "Type": "Tools",
         "High": [],
         "Medium": [
             " CSP frame-ancestors policy is  ",
@@ -795,7 +795,7 @@
         ]
     },
     "https://www.mojoauth.com/verify": {
-        "Type": "Authentication",
+        "Type": "Tools",
         "High": [],
         "Medium": [
             " CSP frame-ancestors policy is  ",
@@ -810,7 +810,7 @@
         ]
     },
     "https://api.corbado.com/verify-passkey": {
-        "Type": "Authentication",
+        "Type": "Tools",
         "High": [],
         "Medium": [
             " CSP frame-ancestors policy is  ",
@@ -827,7 +827,7 @@
         ]
     },
     "https://api.warrant.com/permissions": {
-        "Type": "Authentication",
+        "Type": "Tools",
         "High": [],
         "Medium": [],
         "Low": [],
@@ -975,8 +975,8 @@
             " HSTS Header is missing         "
         ]
     },
-    "https://www.googleapis.com/books/v1/volumes": {
-        "Type": "Books",
+    "https://www.googleapis.com/Education/v1/volumes": {
+        "Type": "Education",
         "High": [],
         "Medium": [
             " CSP frame-ancestors policy is  ",
@@ -991,14 +991,14 @@
         ]
     },
     "http://libgen.rs/search": {
-        "Type": "Books",
+        "Type": "Education",
         "High": [],
         "Medium": [],
         "Low": [],
         "Info": []
     },
     "https://openlibrary.org/developers/api/works": {
-        "Type": "Books",
+        "Type": "Education",
         "High": [],
         "Medium": [
             " CSP frame-ancestors policy is  ",
@@ -1015,8 +1015,8 @@
             " X-Content-Type-Options Header is not set"
         ]
     },
-    "https://api.nytimes.com/svc/books/v3/reviews": {
-        "Type": "Books",
+    "https://api.nytimes.com/svc/Education/v3/reviews": {
+        "Type": "Education",
         "High": [],
         "Medium": [
             " CSP frame-ancestors policy is  ",
@@ -1031,8 +1031,8 @@
             " X-Content-Type-Options Header is not set"
         ]
     },
-    "https://www.penguinrandomhouse.com/books": {
-        "Type": "Books",
+    "https://www.penguinrandomhouse.com/Education": {
+        "Type": "Education",
         "High": [],
         "Medium": [
             " CSP frame-ancestors policy is  ",
@@ -1046,7 +1046,7 @@
         ]
     },
     "https://bibleapi.co/v1/verses": {
-        "Type": "Books",
+        "Type": "Education",
         "High": [],
         "Medium": [
             " CSP frame-ancestors policy is  ",
@@ -1065,7 +1065,7 @@
         ]
     },
     "https://bhagavadgita.io/api/v1/verse": {
-        "Type": "Books",
+        "Type": "Education",
         "High": [],
         "Medium": [
             " CSP frame-ancestors policy is  ",
@@ -1083,7 +1083,7 @@
         ]
     },
     "http://www.vedic-society.com/api/vedic": {
-        "Type": "Books",
+        "Type": "Education",
         "High": [],
         "Medium": [
             " CSP frame-ancestors policy is  ",
@@ -1102,7 +1102,7 @@
         ]
     },
     "https://www.thirukkuralapp.com/api/thirukkural": {
-        "Type": "Books",
+        "Type": "Education",
         "High": [],
         "Medium": [],
         "Low": [],

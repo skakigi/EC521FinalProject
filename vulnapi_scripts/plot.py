@@ -23,6 +23,7 @@ for url, vulnerabilities_data in data.items():
     # Add this vulnerability to the corresponding type
     vulnerabilities_by_type[vuln_type].extend(vulnerabilities_data["Info"])
     vulnerabilities_by_type[vuln_type].extend(vulnerabilities_data["Medium"])
+    vulnerabilities_by_type[vuln_type] = sorted(vulnerabilities_by_type[vuln_type], reverse=True)
 
 for type in vulnerabilities_by_type.keys():
     vulnerability_counts = Counter(vulnerabilities_by_type[type])
