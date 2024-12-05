@@ -9,6 +9,7 @@ d = "vulnapi_scripts/"
 
 output_file = d + "results.json"
 
+type_file = d + "type.txt"
 url_file = d + "url.txt"
 high_file = d + "high.txt"
 medium_file = d + "medium.txt"
@@ -20,17 +21,14 @@ info_file = d + "info.txt"
 def isEmpty(file):
     with open(file,"r") as file_obj:
         if file_obj.read(1):
-
             return True
         else:
             return False
 
 def writeData(data):
-    json_object = json.dumps(data, indent=4)
 
     with open(output_file, "w") as out_file:
-        out_file.write(json_object)
-        out_file.close()
+        json.dump(data, out_file,indent=4)
 
 def readData(file):
     file_object = open(file, "r")
@@ -58,9 +56,11 @@ if info_exist:info_data = readData(info_file)
 else: info_data = []
 
 url_data = readData(url_file)
+type_data = readData(type_file)
 
 data={
     url_data[0]:{
+        "Type":type_data,
         "High": high_data,
         "Medium": medium_data,
         "Low": low_data,
@@ -72,8 +72,6 @@ with open(output_file, "r") as file:
     curr = json.load(file)
 with open("vulnapi_scripts/results.json",'a') as file:
     if not url_data[0] in curr:
-        writeData(json.dump(data,file,indent=4))
-
-
+        writeData(data)
 
 
