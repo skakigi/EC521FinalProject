@@ -1,17 +1,17 @@
 import json
 import matplotlib.pyplot as plt
 
-with open('data.json', 'r') as file:
+with open('results.json', 'r') as file:
     data = json.load(file)
 
 api_count = high_count = med_count = low_count = info_count = 0
 
 for api in data:
     api_count += 1
-    high_count += len(data[api]['high'])
-    med_count += len(data[api]['medium'])
-    low_count += len(data[api]['low'])
-    info_count += len(data[api]['info'])
+    high_count += len(data[api]['High'])
+    med_count += len(data[api]['Medium'])
+    low_count += len(data[api]['Low'])
+    info_count += len(data[api]['Info'])
 
 fig, ax = plt.subplots()
 severities = ['Info', 'Low', 'Medium', 'High']

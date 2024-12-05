@@ -58,20 +58,19 @@ else: info_data = []
 url_data = readData(url_file)
 type_data = readData(type_file)
 
-data={
-    url_data[0]:{
-        "Type":type_data,
-        "High": high_data,
-        "Medium": medium_data,
-        "Low": low_data,
-        "Info": info_data
-    }
+data = {
+    "Type":type_data[0],
+    "High": high_data,
+    "Medium": medium_data,
+    "Low": low_data,
+    "Info": info_data
 }
+
 
 with open(output_file, "r") as file:
     curr = json.load(file)
-with open("vulnapi_scripts/results.json",'a') as file:
-    if not url_data[0] in curr:
-        writeData(data)
+if not url_data[0] in curr:
+    curr[url_data[0]] = data
+    writeData(curr)
 
 
